@@ -1,0 +1,497 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bullet: Ik</title>
+<link href='https://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.bullethotel.nl/assets/css/main.css" type="text/css" />
+<link rel="stylesheet" href="https://www.bullethotel.nl/assets/css/mepage.css" type="text/css" />
+<link rel="stylesheet" href="https://www.bullethotel.nl/assets/css/style.css" type="text/css" />
+<link rel="stylesheet" href="https://www.bullethotel.nl/assets/css/grid.css" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="7c3d952355e113bec780136f-text/javascript" src="/assets/js/jquery.min.js"></script>
+<script type="7c3d952355e113bec780136f-text/javascript" src="/assets/js/jquery.ui.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" type="7c3d952355e113bec780136f-text/javascript"></script>
+</head>
+<body>
+<style>
+        #login-errors,
+        #register-errors {
+            width: 100%;
+            height: auto;
+            background-color: #2ecc71;
+            color: #fff;
+            font-size: 17px;
+            text-align: center;
+            line-height: 30px;
+            -webkit-transition: opacity 3s ease-in-out;
+            -moz-transition: opacity 3s ease-in-out;
+            -ms-transition: opacity 3s ease-in-out;
+            -o-transition: opacity 3s ease-in-out;
+            opacity: 1;
+        }
+
+        /* Tooltip container */
+        .tooltip {
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+            display: inline-block;
+            z-index: 100;
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            z-index: 100;
+            /* Position the tooltip text */
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+
+            /* Fade in tooltip */
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Tooltip arrow */
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+            z-index: 100;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+            z-index: 100;
+        }
+    </style>
+<div id="register-errors">
+<script type="7c3d952355e113bec780136f-text/javascript">
+            function myFunction() {
+                var x = document.getElementById("myDIV");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+</div>
+
+<script type="7c3d952355e113bec780136f-text/javascript">
+var auto_refresh317 = setInterval(
+function getstatusraw()
+{
+$('#load_rawstatus').load('getstatusraw').fadeIn("slow");
+console.log("GET statusraw - 200 loaded");
+}, 60000);
+</script>
+<div id="load_rawstatus"></div>
+<style type="text/css">
+        #register-errors-storing {
+            width: 100%;
+            height: auto;
+            background-color: red;
+            color: #fff;
+            font-size: 17px;
+            text-align: center;
+            line-height: 30px;
+            -webkit-transition: opacity 3s ease-in-out;
+            -moz-transition: opacity 3s ease-in-out;
+            -ms-transition: opacity 3s ease-in-out;
+            -o-transition: opacity 3s ease-in-out;
+            opacity: 1;
+        }
+</style>
+<script type="7c3d952355e113bec780136f-text/javascript">
+function myFunction22() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+<div id="register-errors-storing">
+</div>
+<meta http-equiv="Cache-control: max-age:14400" content="public">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="7c3d952355e113bec780136f-text/javascript"></script>
+<script type="7c3d952355e113bec780136f-text/javascript">
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
+</script>
+<div id="fb-root"></div>
+<script type="7c3d952355e113bec780136f-text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119782978-1" type="7c3d952355e113bec780136f-text/javascript"></script>
+<script type="7c3d952355e113bec780136f-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-119782978-1');
+  gtag('set', {'user_id': '4734'}); // De gebruikers-ID instellen op basis van de ingelogde user_id.
+</script>
+<script async src="//pagead2.googlesyndication.com/
+pagead/js/adsbygoogle.js" type="7c3d952355e113bec780136f-text/javascript"></script>
+<script type="7c3d952355e113bec780136f-text/javascript">
+(adsbygoogle = window.adsbygoogle || []).push({
+google_ad_client: "ca-pub-5221426625943963",
+enable_page_level_ads: true
+});
+</script>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<header>
+<div class="hotel"></div>
+<div class="big-logo">
+<div class="onlinecount"><a style="color: #fff; text-decoration: none;" href="/online" target="_self">Er zijn momenteel <b>1</b> Bullets online!</a></div>
+</div>
+<div class="head_enter">&nbsp;
+<a style="text-transform: none; text-decoration: none;" href="/client" target="/client" class="btn btn-success">&nbsp;NAAR BULLET&nbsp;</a>
+<a style="text-transform: none;  text-decoration: none;" onclick="if (!window.__cfRLUnblockHandlers) return false; logout()" href="/logout" class="btn btn-danger" data-cf-modified-7c3d952355e113bec780136f-="">&nbsp;LOG UIT&nbsp;</a>
+</div>
+<div class="wrap">
+<nav>
+<ul class="main">
+<li class="menu-button"><i class="fa fa-bars" style="cursor:pointer;"></i></li>
+</ul>
+<ul class="left">
+<li class="">
+<a class="icon home" href="/">&nbsp; HOME</a>
+<div class="submenu">
+<a href="/me">Hazard</a>
+<a href="/home">Mijn pagina</a>
+<a href="/profile">Jouw instellingen</a>
+<a href="/tagprofile">Prefix instellingen</a>
+<a href="/collageupload">Foto uploaden&nbsp;<span style="margin:5px;display: inline-block;padding: .25em .4em;font-size: 75%;font-weight: 700;line-height: 1;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25rem;color: #fff;background-color: #28a745;">NIEUW!</span></a>
+<a href="/logout">Uitloggen</a>
+</div>
+</li>
+<li class="">
+<a class="icon community" href="/community">&nbsp; GEMEENSCHAP</a>
+<div class="submenu">
+<a href="/community">Community overzicht</a>
+<a href="/online">Online Bullets</a>
+<a href="/newsarchief">Bullet Nieuws</a>
+<a href="/fotocollage">Fotocollage&nbsp;<span style="margin:5px;display: inline-block;padding: .25em .4em;font-size: 75%;font-weight: 700;line-height: 1;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25rem;color: #fff;background-color: #28a745;">NIEUW!</span></a>
+<a href="/tags">Tags</a>
+<a href="/zoekgroep">Groepen zoeken</a>
+<a href="/eventagenda">Event Agenda</a>
+</div>
+</li>
+<li class="">
+<a class="icon staff" href="/medewerkers">&nbsp; MEDEWERKERS</a>
+<div class="submenu">
+<a href="/medewerkers">Bullet Medewerkers</a>
+<a href="/Developers">Developers</a>
+<a href="/DJ">Radio DJ'S</a>
+<a href="/communityteam">Community Team</a>
+<a href="/gokbond">Gokbond</a>
+</div>
+</li>
+<li class="">
+<a class="icon diamonds" href="/diamonds">&nbsp; WINKEL</a>
+<div class="submenu">
+<a href="/badge">Badgeshop</a>
+<a href="/provip">Koop Premium</a>
+<a href="/diamonds">Koop Diamanten</a>
+</div>
+</li>
+<li class="">
+<a href="/forum"><img src="https://bullethotel.nl/forum_4.gif">&nbsp; FORUM</a>
+</li>
+<li class="">
+<a class="icon extra" href="#">&nbsp; EXTRA</a>
+<div class="submenu">
+<a href="/solli">Solliciteren</a>
+<a href="/stats">Statistieken&nbsp;<span style="margin:5px;display: inline-block;padding: .25em .4em;font-size: 75%;font-weight: 700;line-height: 1;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25rem;color: #fff;background-color: #28a745;">NIEUW!</span></a>
+<a href="/FAQ">FAQ hulptool</a>
+</div>
+</li>
+</li>
+</li>
+</li>
+</ul>
+<div style="text-align: center; line-height: 40px; margin-top: 0px;" class="fb-like" data-href="https://www.facebook.com/Bullet-Hotel-2011106975829595/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+</nav>
+</div>
+</header>
+<style>
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #34495E; 
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #2F4255; 
+    width: 20px !important;
+}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/f1055231234507.564a1d234bfb6.gif') 50% 50% no-repeat rgb(249,249,249); 
+    /* https://mir-s3-cdn-cf.behance.net/project_modules/disp/f1055231234507.564a1d234bfb6.gif */
+    opacity: .8;
+}
+.placeholder {
+    width: 300;
+    height: 300;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('https://www.broadwaybalancesamerica.com/images/ajax-loader.gif');
+}
+.txt:hover {
+    text-decoration: underline;
+}
+</style>
+
+<div id="content" style="position: relative; top: 2px; bottom: 10px; right: 225px;" class="clearfix">
+</div>
+</div>
+</div>
+</div>
+
+<div id="content" style="position: relative; top: -75px; right: 215px;" class="clearfix">
+<div class="container clearfix">
+<div class="grid_8">
+<div class="me_info">
+<div class="me-left">
+<div class="profile" onclick="if (!window.__cfRLUnblockHandlers) return false; profileshow('4734');" style="background:url(https://bullethotel.nl/bullet-imaging/avatarimage.php?figure=lg-3116-96-92.hr-828-97565.hd-190-22.ch-3438-96-96.sh-290-92.he-1608-63.ca-3085-92&amp;direction=2&amp;head_direction=3&amp;gesture=sml);" alt="Ja dat ben jij!" data-toggle="tooltip" data-placement="top" title="Ja dat ben jij!" data-cf-modified-7c3d952355e113bec780136f-=""></div>
+</div>
+<div class="me-right">
+<a href="https://bullethotel.nl/client" target="_new">
+<div class="enter">
+<div class="entericon"></div><b>Naar het hotel</b>
+</div>
+
+</a>
+<div class="stats">
+<p class="credits">108590</p>
+<p class="diamonds">51</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="grid_8">
+<div style="border-radius: 5px; padding: 0px; background-image: url(/ts/merchant_promo.png); background-size: fill; height: 160px; background-position: -116px -69px;" class="panel-body">
+<div style="color: #fff; font-size: 28px; margin-left: 10px; margin-top: -5px; text-shadow: 2px 2px black;">
+FVDW #1
+</div>
+<div style="color: #fff; font-size: 18px; margin-left: 10px; float: left; text-shadow: 2px 2px black;">
+Zie aldaar, de troubadour komt eraan!
+</div>
+<div class="newsTitleRead">
+<div style="margin-top: 95px;">
+<a class="btn btn-success" style="float: right; margin-right: 15px; margin-top: -25px; padding: 9px 42px; font-size: 15px; font-weight: normal;  text-decoration: none;" href="https://bullethotel.nl/news/264">Lees meer</a>
+</div>
+</div>
+</div>
+<div style="border-radius: 5px; padding: 0px; background-image: url(/ts/Bouwen2.png);  height: 80px; background-position: -50px -18px;" class="panel-body">
+<div style="color: #fff; font-size: 28px; margin-left: 10px; margin-top: 5px; text-shadow: 2px 2px black;">
+KVD2W stopt
+</div>
+<div style="display: inline-block;width: 400px;white-space: nowrap;overflow: hidden !important;text-overflow: ellipsis;color: #fff; font-size: 18px; margin-left: 10px; float: left; text-shadow: 2px 2px black;">
+Na 31 keer komt er een einde aan
+ </div>
+<div class="newsTitleRead">
+<div style="margin-top: 30px;">
+<a class="btn btn-success" style="float: right; margin-right: 15px; margin-top: -30px; padding: 9px 42px; font-size: 15px; font-weight: normal;  text-decoration: none;" href="https://bullethotel.nl/news/263">Lees meer</a>
+</div>
+</div>
+<div style="border-radius: 5px; padding: 0px; background-image: url(/ts/moonlight.png);  height: 80px; background-position: -50px -18px;" class="panel-body">
+<div style="color: #fff; font-size: 28px; margin-left: 10px; margin-top: 50px; text-shadow: 2px 2px black;">
+KVD2W #31
+</div>
+<div style="display: inline-block;width: 400px;white-space: nowrap;overflow: hidden !important;text-overflow: ellipsis;color: #fff; font-size: 18px; margin-left: 10px; float: left; text-shadow: 2px 2px black;">
+Ieks! Hoorde jij dat ook?
+</div>
+<div class="newsTitleRead">
+<div style="margin-top: 50px;">
+<a class="btn btn-success" style="float: right; margin-right: 15px; margin-top: -50px; padding: 9px 42px; font-size: 15px; font-weight: normal;  text-decoration: none;" href="https://bullethotel.nl/news/262">Lees meer</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<a href="/client" target="_blank">
+<div id="content" style="z-index:-100;position: relative; top: -70px; right: 215px;" class="clearfix">
+</a>
+<div class="container clearfix">
+<div class="grid_8">
+<div class="box">
+<h2 class="green">Leden werven</h2>
+<div class="inner">
+Mijn link: <i>https://bullethotel.nl/ref/Hazard</i>
+<div style="float:right;">
+<button class="btn" onclick="if (!window.__cfRLUnblockHandlers) return false; setClipboard('https://bullethotel.nl/ref/Hazard')" data-cf-modified-7c3d952355e113bec780136f-="">Mijn referral kopiëren</button>
+</div>
+<br><br>
+Je link is <b>0</b> keer gebruikt! </div>
+</div>
+<div class="box">
+<h2 class="blue">Bullet van de week </h2>
+<div class="inner" <div class="vdw rvdw">
+<div class="vdwuser">
+<a href="./home/Miloš"><b><span class="txt">Miloš</span></b></a><br><br>
+<div style="width: 58px; height: 110px;margin-top:-40px; float: left; background: url(https://bullethotel.nl/bullet-imaging/avatarimage.php?figure=hr-3163-1394.lg-3023-64.ea-3107-63-1408.sh-3275-95.ch-3321-82.fa-1202-110.he-3082-92.hd-9830-97554&size=m&action=crr=6,wav&direction=2&head_direction=3&gesture=sml);"></div> </div>
+<p>
+Een Bullet van de week is een speler die vaak anderen helpt, actief is, goede idee&euml;n heeft of op een andere manier Bullethotel leuker of beter heeft gemaakt. Deze speler staat een week lang in de spotlights en krijgt de eretitel: Bullet van de week met de bijbehorende badge.
+</p>
+<img src="https://bullethotel.nl/swf/c_images/album1584/BVDW2.gif" style="float:right;">
+<P>
+<A href="https://docs.google.com/forms/d/e/1FAIpQLSf_o5sNtFRo4O9OKSuCW61l2WY1rOqCmqtXEzKFGn8A1g89JQ/viewform" target=_blank><b><span class="txt">Klik hier om te stemmen!</span></b></A>
+</p>
+</div>
+</div>
+</div>
+
+</div>
+</DIV>
+
+
+<div id="content" style="position: relative; top: -617px; right: 224px;" class="clearfix">
+<div class="container clearfix">
+<div class="grid_4">
+<div class="box">
+<h2 class="green">Nieuwste lid op Bullet </h2>
+<div class="inner">
+<center><b>Verwelkom het 5625ste lid in Bullet:</b></center>
+<center>
+<img src="https://bullethotel.nl/bullet-imaging/avatarimage.php?figure=lg-3116-82-82.fa-3276-107569.ch-235-73.hr-3163-61.ca-1807-63.hd-180-7.sh-3206-1408&amp;direction=2&amp;head_direction=2&amp;size=b" onmouseover="if (!window.__cfRLUnblockHandlers) return false; this.src='https://bullethotel.nl/bullet-imaging/avatarimage.php?figure=lg-3116-82-82.fa-3276-107569.ch-235-73.hr-3163-61.ca-1807-63.hd-180-7.sh-3206-1408&amp;direction=2&amp;gesture=sml&amp;head_direction=3&amp;action=wav&amp;size=b'" onmouseout="if (!window.__cfRLUnblockHandlers) return false; this.src='https://bullethotel.nl/bullet-imaging/avatarimage.php?figure=lg-3116-82-82.fa-3276-107569.ch-235-73.hr-3163-61.ca-1807-63.hd-180-7.sh-3206-1408&amp;direction=2&amp;head_direction=2&amp;size=b'" data-cf-modified-7c3d952355e113bec780136f-="">
+</center>
+<P>
+<P>
+<center><a href="home/MisterRiffi" align="right"><br /><b><span class="txt">MisterRiffi</span></b></a><br /><b align="right"></b></center>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="content" style="position: relative; top: -685px; right: -430px;" class="clearfix">
+<div class="grid_4">
+<div class="box" style="height: auto; width: 290px;">
+<h2 class="blue">Event Kalender <img src="https://bullethotel.nl/images/events.gif" style="no-repeat #1198d2; float:right"></h2>
+<div id="article-archive">
+<ul>
+<li><div class="grow">›› <a href="/event/225" target="_self" class="tip">Winter Team Bingo<span>Over de plaats en tijd<br>Gepost op: <b>17-11-19</b> host: <b>Judas</b><br>Georganiseerd op: <b>20-11-19</b></span></a></div></li><li><div class="grow">›› <a href="/event/224" target="_self" class="tip">Raad het Woord<span>Over de plaats en tijd<br>Gepost op: <b>17-11-19</b> host: <b>Judas</b><br>Georganiseerd op: <b>19-11-19</b></span></a></div></li> <br>
+<center>
+<a style="font-size:18px;" href="/eventagenda" target="_self"><span class="txt">Meer evenementen bekijken</span></a>
+</center>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="content" style="position: relative; top: -690px; right: -430px;" class="clearfix">
+<div class="grid_4">
+<a href="https://vindretros.nl/vote/bullethotel" target="_self"><img style="padding-bottom: 15px; border-radius: 5px 5px 5px 5px;" src="https://cdn.discordapp.com/attachments/472813378138800148/571082154776330251/testt.png"></a>
+</div>
+</div>
+
+
+<div id="content" style="position: relative; top: -700px; right: -430px;" class="clearfix">
+<div class="grid_4">
+<div class="box" style="height: 75px;width: 290px;">
+<div class="radio_box">
+<h2 class="orange">BulletFM</h2>
+<div class="radio_button_box">
+<audio volume="0.1" id="player" autoplay="true" preload="auto">
+<source volume="0.1" src="https://bulletfm.radioca.st/stream" type="audio/mp3">
+<source volume="0.1" src="https://bulletfm.radioca.st/stream" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<div id="play" onclick="if (!window.__cfRLUnblockHandlers) return false; document.getElementById('player').play(); document.getElementById('play').style.display='none'; document.getElementById('pause').style.display='block';" style="display: none;background:#B85C5C;border-radius:0px 0px 0px 3px;" class="radiobutton" data-tooltip="Player aanzetten" data-cf-modified-7c3d952355e113bec780136f-=""><div class="tooltip"><i style="z-index: 1;" class="fa fa-play"></i><span class="tooltiptext">Player aanzetten</span></div></div>
+<div id="pause" onclick="if (!window.__cfRLUnblockHandlers) return false; document.getElementById('player').pause(); document.getElementById('play').style.display='block'; document.getElementById('pause').style.display='none';" style="border-radius:0px 0px 0px 3px;" class="radiobutton" data-tooltip="Player uitzetten" data-cf-modified-7c3d952355e113bec780136f-=""><div class="tooltip"><i style="z-index: 1;" class="fa fa-pause"></i><span class="tooltiptext">Player uitzetten</span></div></div>
+<div class="radiobutton" onclick="if (!window.__cfRLUnblockHandlers) return false; document.getElementById('player').volume -= 0.1;" data-tooltip="Volume zachter" data-cf-modified-7c3d952355e113bec780136f-=""><div class="tooltip"><i style="z-index: 1;" class="fa fa-volume-down"></i><span class="tooltiptext">Volume zachter</span></div></div>
+<div class="radiobutton" onclick="if (!window.__cfRLUnblockHandlers) return false; document.getElementById('player').volume += 0.1;" data-tooltip="Volume harder" data-cf-modified-7c3d952355e113bec780136f-=""><div class="tooltip"><i style="z-index: 1;" class="fa fa-volume-up"></i><span class="tooltiptext">Volume harder</span></div></div>
+<div class="radiobutton" onclick="if (!window.__cfRLUnblockHandlers) return false; document.getElementById('player').volume = 0" data-tooltip="Geluid uitzetten" data-cf-modified-7c3d952355e113bec780136f-=""><div class="tooltip"><i style="z-index: 1;" class="fa fa-volume-off"></i><span class="tooltiptext">Geluid uitzetten</span></div></div>
+<div class="radiobutton" onclick="if (!window.__cfRLUnblockHandlers) return false; document.getElementById('player').volume = 1" data-tooltip="Geluid aanzetten" data-cf-modified-7c3d952355e113bec780136f-=""><div class="tooltip" style="z-index: 5;"><i style="z-index: 1;" class="fa fa-volume-up"></i><span class="tooltiptext">Geluid aanzetten</span></div></div>
+<a href="https://djpaneel.bullethotel.nl/_frontend/timetable.php" target="_blank">
+<div class="radiobutton" data-tooltip="Bekijk het rooster" style="background:#B8975C;"><div class="tooltip"><i style="color:#fff;z-index: 1;" class="fa fa-calendar"></i><span class="tooltiptext">Bekijk het rooster</span></div></div></a>
+<a href="https://djpaneel.bullethotel.nl/_frontend/requests.php" target="_blank">
+<div class="radiobutton" data-tooltip="Stuur een verzoekje in" style="background:#B8975C;"><div class="tooltip"><i style="color:#fff;z-index: 1;" class="fa fa-envelope"></i><span class="tooltiptext">Stuur een verzoekje in</span></div></div></a>
+<div style="clear: both;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="content" style="position: relative; top: -705px; right: -430px;" class="clearfix">
+<div class="grid_4">
+<iframe src="https://discordapp.com/widget?id=348848462256930836&theme=dark" width="308" height="325" allowtransparency="true" frameborder="0"></iframe>
+</div>
+</div>
+<script type="7c3d952355e113bec780136f-text/javascript">
+        function kopieren() {
+            var copyText = document.getElementById("ref");
+            copyText.select();
+            document.execCommand("copy");
+            alert("Je referral is succesvol gekopieerd! Stuur deze link naar je vriend(inn)en");
+        }
+
+        function setClipboard(value) {
+            var tempInput = document.createElement("input");
+            tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+            tempInput.value = value;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            alert("Je referral is succesvol gekopieerd! Stuur deze link naar je vriend(inn)en");
+        }
+    </script><script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="7c3d952355e113bec780136f-|49" defer=""></script>
